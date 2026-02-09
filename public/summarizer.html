@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="summarizer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="heading">
+            <h1 class="h1">
+                OPTIMA-CENTRUM-CARE
+            </h1>
+        </div>
+        <div class="links">
+            <ul class="link">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT-US</a></li>
+                <li><a href="doctor.html">DOCTORS</a></li>
+                <li><a href="summarizer.html">SUMMARIZER</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h2>REPORT-SUMMARIZER</h2>
+
+        <input type="file" id="file" accept="image/*">
+        <button onclick="play()">SUMMARIZE</button>
+
+        <h3>EXTRACTED-TEXT</h3>
+        <pre id="ocrtext"></pre>
+
+        <h3>SUMMARIZED-REPORT</h3>
+        <pre id="summary"></pre>
+    </div>
+    <script src="summarizer.js"></script>
+</body>
+</html>

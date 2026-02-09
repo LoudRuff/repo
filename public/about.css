@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f8fa;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    display: block;
+    padding: 20px 20px 40px;
+    text-align: center;
+}
+
+.h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.link li a {
+    display: inline-block;
+    background-color: #0b5ed7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.link li a:hover {
+    background-color: #0a4db0;
+    transform: translateY(-2px);
+}
+
+.heading {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-top: 40px;
+    color: #0b5ed7;
+}
+
+.section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.section p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.section h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+.contact{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0b5ed7;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.contact:hover{
+    background-color: #0a4db0;
+    transform: translateY(-2px);
+}
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 1.5rem;
+    }
+
+    .link {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .link li a {
+        display: block;
+        width: 200px;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+    }}
+   @media (max-width:768px) {
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .link li a {
+        padding: 8px 16px;
+        font-size: 13px;
+    }}
